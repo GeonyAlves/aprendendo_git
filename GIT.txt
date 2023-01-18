@@ -1,4 +1,4 @@
-resumo do GIT:
+/*resumo do GIT:
 1-Versionamento:Um sistema de controle de versões (ou versionamento), VCS (do inglês Version Control System) ou ainda SCM (do inglês Source Code Management) é um software que tem a finalidade de gerenciar diferentes versões no desenvolvimento de um documento qualquer.  Esses sistemas são comumente utilizados no desenvolvimento de software para controlar as diferentes versões, histórico e desenvolvimento dos códigos-fontes e também de documentação.
 
 2-VCS local:Sistema de Controle de Versão local foi o RCS (Revision Control System ou Sistema de Controle de Revisão), muito útil para textos que precisam ser revisado com frequência, por exemplo, programas, documentação, gráficos processuais, documentos e cartas. Esta abordagem é muito comum porque é muito simples, mas também é também muito propensa a erros e falhas. É fácil esquecer em qual diretório você está e acidentalmente sobrescrever o arquivo errado ou copiar arquivos que não quer.
