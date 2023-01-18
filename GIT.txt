@@ -1,0 +1,45 @@
+resumo do GIT:
+1-Versionamento:Um sistema de controle de versões (ou versionamento), VCS (do inglês Version Control System) ou ainda SCM (do inglês Source Code Management) é um software que tem a finalidade de gerenciar diferentes versões no desenvolvimento de um documento qualquer.  Esses sistemas são comumente utilizados no desenvolvimento de software para controlar as diferentes versões, histórico e desenvolvimento dos códigos-fontes e também de documentação.
+
+2-VCS local:Sistema de Controle de Versão local foi o RCS (Revision Control System ou Sistema de Controle de Revisão), muito útil para textos que precisam ser revisado com frequência, por exemplo, programas, documentação, gráficos processuais, documentos e cartas. Esta abordagem é muito comum porque é muito simples, mas também é também muito propensa a erros e falhas. É fácil esquecer em qual diretório você está e acidentalmente sobrescrever o arquivo errado ou copiar arquivos que não quer.
+
+3-Sistemas Centralizados de Controle de Versão:Est sistema de versão possui um único servidor que contém todos os arquivos de controle de versão e um número de clientes que usam arquivos a partir desse lugar central.
+
+4-Sistemas Distribuídos de Controle de Versão:Faz um backup completo de todos os dados, ou seja, são vários repositórios autônomos e independentes, um para cada desenvolvedor.
+
+O Git então é um sistema de controle de versões distribuído, usado principalmente no desenvolvimento de software, mas que pode ser usado para registrar o histórico de edições de qualquer tipo de arquivo. As principais funções dessa ferramenta são:
+
+*Permite que os desenvolvedores trabalhem simultaneamente.
+*Não permite substituir as alterações um do outro.
+*Mantém um histórico de todas as versões.
+*É um sistema de controle de versão descentralizado.
+
+Características
+Snapshots (GIT): Toda vez que você fizer um commit, ou salvar o estado de seu projeto no Git, ele basicamente tira uma foto de todos os seus arquivos (snapshots) e armazena uma referência para esse conjunto de arquivos. 
+
+Git opera em sua maioria localmente, quase que todas operações são efetuadas de forma instantânea, quase todas as operações são locais.
+
+Integridade: Git assegura que o usuário não irá perder informação em movimentação ou corromper arquivos sem que perceba través do Checksum.
+
+Os três estados: 
+*Committed significa que os dados estão armazenados de forma segura em seu banco de dados local. 
+*Modificado significa que você alterou o arquivo, mas ainda não fez o commit no seu banco de dados. *Preparado significa que você marcou a versão atual de um arquivo modificado para fazer parte de seu próximo commit.
+
+Para manter a consistência desses estados, o Git divide seu diretório em três seções:
+*O repositório Git é onde se encontram todos os arquivos em sua forma committed, ou seja, todos os arquivos que servem como base para analisar o estado em que se encontram os arquivos no diretório do trabalho.
+*No diretório de trabalho estão todos os arquivos que são modificáveis.
+*Área de preparação serve para preparar os arquivos que foram modificados para serem enviados ao repositório e, assim, serem atualizados no repositório Git.
+
+-COMANDOS DO GIT:
+*Para visualizar o status dos seus arquivos, é usado o comando: git status.
+*É possível observar as mudanças feitas em arquivos monitorados modificados através do comando: git diff.
+*Para verificar o histórico dos commits efetuados em determinado repositório, existe o comando:git log.
+
+*Clonando um repositório existente: Caso você queira obter a cópia de um repositório Git existente: git clone url.
+*nicializando um repositório
+Para você começar a monitorar um projeto existente com Git, você deve ir para o diretório desse projeto e digitar o seguinte comando:
+cd /seu/diretorio/que/deseja/criargit init
+*Se você quer começar a controlar o versionamento dos arquivos existentes (ao contrário de um diretório vazio), você provavelmente deve começar a monitorar esses arquivos e fazer um commit inicial. Você pode fazer isso com alguns comandos git add que especificam os arquivos que você quer monitorar, seguido de um git commit:
+git add .
+git commit -m “mensagem commit inicial”
+Obs: O “ponto” no comando git add significa que você está adicionando todos os arquivos modificados ou criados no seu commit.
